@@ -1,16 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { EditarusuarioComponent } from './editarusuario/editarusuario.component';
+import { ListadousuariosComponent } from './listadousuarios/listadousuarios.component';
+import { MostrarunoComponent } from './mostraruno/mostraruno.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrincipalComponent,
+    HomeComponent,
+    EditarusuarioComponent,
+    ListadousuariosComponent,
+    MostrarunoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

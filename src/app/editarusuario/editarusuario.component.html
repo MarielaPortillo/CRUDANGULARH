@@ -1,0 +1,28 @@
+
+ <!--Data:{{respuesta | json}}       -->
+
+<div class="container">
+    <div class="row">
+
+
+       <!-- <div class="col-3 mt-2" *ngFor="let u of respuesta">-->
+
+            
+        <form class="col-12" >
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" [(ngModel)]="usuario.nombre" class="form-control" name="nombre" placeholder="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Direccion</label>
+                <input type="text" [(ngModel)]="usuario.direccion" class="form-control" name="direccion" placeholder="direccion">
+            </div>
+            
+            <button class="btn btn-primary" (click)="enviarPos()" routerLink="" routerLinkActive="active" >Enviar</button>
+            
+        </form>
+
+    
+
+    </div>
+</div>
