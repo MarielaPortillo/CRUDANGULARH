@@ -1,0 +1,27 @@
+
+<!--Data:{{usuarios | json}}-->
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-12 py-4">
+            <h1 class="display-5">Mostrar estudiantes</h1>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.seekpng.com/png/full/356-3562377_personal-user.png" class="card-img-top"
+                    alt="..."> 
+                <div class="card-body">
+                    <h5 class="card-title">{{usuarios.nombre}}</h5>
+                    <p class="card-text">Dirección: {{ usuarios.direccion }}</p>
+                    <a href="#" class="btn btn-primary">Editar</a>
+                    <a href="#" class="btn btn-danger"  >Eliminar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+     
